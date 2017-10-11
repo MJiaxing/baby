@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				list-style: none;
+			}
+			#index{
+				width:100%;
+				height:350px;
+				background:pink;
+				color:#fff;
+				position:relative;
+			}
+			#index ul{
+				width:40%;
+				position: absolute;
+				right:0;
+				top:20px;
+				overflow: hidden;
+			}
+			#index ul li{
+				text-align: center;
+				float: left;
+				width:20%;
+			}
+			#index #kuai{
+				width:50px;
+				height: 50px;
+				border: 1px solid plum;
+				background:rgba(255,255,255,0.5);
+				display: none;
+				position: absolute;
+				right:20px;
+				top: 20px;
+			}
+			#index img{
+				width:164px;
+				height:252px;
+				margin:30px auto;
+				display: block;
+			}
+			#menu{
+				width:100%;
+			}
+			#menu li{
+				width:50%;
+				float:left;
+				text-align: center;
+				margin-top:20px;
+			}
+			@media (max-width:500px)
+			{
+				ul li{
+					display:none;
+				}
+				#index #kuai{
+					display:block;
+				}
+			}
+			@media (max-width:800px)
+			{
+				#menu li{
+					width:100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="index">
+			<span>Gulp中文网</span>
+			<ul>
+				<li>首页</li>
+				<li>中文</li>
+				<li>首页</li>
+				<li>首页</li>
+				<li>首页</li>
+				
+			</ul>
+			<div id="kuai"></div>
+			<img src="c3.jpg" alt="" />
+		</div>
+		<ol id="menu">
+			<li>易于使用易于使用易于使用易于使用易于使用</li>
+			<li>构建快速构建快速构建快速构建快速构建快速</li>
+			<li>插件高质插件高质插件高质插件高质插件高质</li>
+			<li>易于学习易于学习易于学习易于学习易于学习</li>
+		</ol>
+	</body>
+</html>
